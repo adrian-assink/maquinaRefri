@@ -41,7 +41,7 @@ while True:
         if menuAdm == 1:
           print("1 - Quantidade de Coca Cola: ", cocaCola)
           print("2 - Quantidade de Sprite: ", sprite)
-          print("3 - Quantidade de Kuar: ", kuat)
+          print("3 - Quantidade de Kuat: ", kuat)
           print("4 - Quantidade de Itubaina: ", itubaina)
           print("5 - Quantidade de Guarana: ", guarana)
           print("6 - Quantidade de Agua: ", agua)
@@ -60,25 +60,25 @@ while True:
               sprite = int(input("QTD Invalida modificar para positivo: "))
           elif modificarQtd == 3:
             kuat = int(input("Atualizar QTD de Kuat: "))
-            if kuat < 0:
+            if kuat > 0:
               print("Nova QTD de Kuat: ", kuat)
             else:
               kuat = int(input("QTD Invalida modificar para positivo: "))
           elif modificarQtd == 4:
             itubaina = int(input("Atualizar QTD de Itubaina: "))
-            if itubaina < 0:
+            if itubaina > 0:
              print("Nova QTD de Itubaina: ", itubaina)
             else:
               itubaina = int(input("QTD Invalida modificar para positivo: "))
           elif modificarQtd == 5:
             guarana = int(input("Atualizar QTD de Guarana: "))
-            if guarana < 0:
+            if guarana > 0:
               print("Nova QTD de Guarana: ", guarana)
             else:
               guarana = int(input("QTD Invalida modificar para positivo: "))
           elif modificarQtd == 6:
             agua = int(input("Atualizar QTD de Agua: "))
-            if agua < 0:
+            if agua > 0:
               print("Nova QTD de Agua: ", agua)
             else:
               agua = int(input("QTD Invalida modificar para positivo: "))
