@@ -10,15 +10,15 @@ senhaAdm = "1234"
 
 moeda5 = 3
 moeda10 = 2
-moeda25 = 0
-moeda50 = 0
+moeda25 = 2
+moeda50 = 1
 moeda1 = 10
 
 cedula2 = 10
 cedula5 = 10
 cedula10 = 10
-cedula20 = 10
-cedula50 = 4
+cedula20 = 4
+cedula50 = 3
 cedula100 = 1
 
 qtdInterna = (moeda5*0.05) + (moeda10*0.10) + (moeda25*0.25) + (moeda50*0.5) + (moeda1*1) + (cedula2*2) + (cedula5*5) + (cedula10*10) + (cedula20*20) + (cedula50*50) + (cedula100*100)
@@ -48,22 +48,40 @@ while True:
           modificarQtd = int(input("Selecionar item: "))
           if modificarQtd == 1:
             cocaCola = int(input("Atualizar QTD de Coca Colas: "))
-            print("Nova QTD de Cocas: ", cocaCola)
+            if cocaCola > 0:
+              print("Nova QTD de Cocas: ", cocaCola)
+            else:
+              cocaCola = int(input("QTD Invalida modificar para positivo: "))
           elif modificarQtd == 2:
             sprite = int(input("Atualizar QTD de Sprite: "))
-            print("Nova QTD de Sprite: ", sprite)
+            if sprite > 0:
+              print("Nova QTD de Sprite: ", sprite)
+            else:
+              sprite = int(input("QTD Invalida modificar para positivo: "))
           elif modificarQtd == 3:
-            sprite = int(input("Atualizar QTD de Kuat: "))
-            print("Nova QTD de Kuat: ", kuat)
+            kuat = int(input("Atualizar QTD de Kuat: "))
+            if kuat < 0:
+              print("Nova QTD de Kuat: ", kuat)
+            else:
+              kuat = int(input("QTD Invalida modificar para positivo: "))
           elif modificarQtd == 4:
-            sprite = int(input("Atualizar QTD de Itubaina: "))
-            print("Nova QTD de Itubaina: ", itubaina)
+            itubaina = int(input("Atualizar QTD de Itubaina: "))
+            if itubaina < 0:
+             print("Nova QTD de Itubaina: ", itubaina)
+            else:
+              itubaina = int(input("QTD Invalida modificar para positivo: "))
           elif modificarQtd == 5:
-            sprite = int(input("Atualizar QTD de Guarana: "))
-            print("Nova QTD de Guarana: ", guarana)
+            guarana = int(input("Atualizar QTD de Guarana: "))
+            if guarana < 0:
+              print("Nova QTD de Guarana: ", guarana)
+            else:
+              guarana = int(input("QTD Invalida modificar para positivo: "))
           elif modificarQtd == 6:
-            sprite = int(input("Atualizar QTD de Agua: "))
-            print("Nova QTD de Agua: ", agua)
+            agua = int(input("Atualizar QTD de Agua: "))
+            if agua < 0:
+              print("Nova QTD de Agua: ", agua)
+            else:
+              agua = int(input("QTD Invalida modificar para positivo: "))
           else:
             print("Comando nao reconhecido")
             contador = "n"
